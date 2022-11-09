@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRoverProject.Web", "MarsRoverProject.Web\MarsRoverProject.Web.csproj", "{5F0E6D1C-686D-4DDB-8D0E-64CAEEE55A5F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{0D9FFAC9-D51C-4673-AA46-E11D118EA5A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{24B3D41A-7D10-4C8A-9C3D-FA4CE0E07F8E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{C8CC5CEA-F0A3-4C63-A5AF-6C4AB8B6670B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarsRoverProject.Domain", "MarsRoverProject.Domain\MarsRoverProject.Domain.csproj", "{86AEEE95-8793-4C56-AE4E-4ED3A5EC60D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{02363EB5-527F-4BC3-ABFE-3E610CDAC59E}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{70909173-0F6D-4914-A112-57EE5176AEB6}"
+	ProjectSection(SolutionItems) = preProject
+		..\data\incorrect_data_file.txt = ..\data\incorrect_data_file.txt
+		..\data\valid_data_file.txt = ..\data\valid_data_file.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F0E6D1C-686D-4DDB-8D0E-64CAEEE55A5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F0E6D1C-686D-4DDB-8D0E-64CAEEE55A5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F0E6D1C-686D-4DDB-8D0E-64CAEEE55A5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F0E6D1C-686D-4DDB-8D0E-64CAEEE55A5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86AEEE95-8793-4C56-AE4E-4ED3A5EC60D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86AEEE95-8793-4C56-AE4E-4ED3A5EC60D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86AEEE95-8793-4C56-AE4E-4ED3A5EC60D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86AEEE95-8793-4C56-AE4E-4ED3A5EC60D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5F0E6D1C-686D-4DDB-8D0E-64CAEEE55A5F} = {0D9FFAC9-D51C-4673-AA46-E11D118EA5A1}
+		{86AEEE95-8793-4C56-AE4E-4ED3A5EC60D9} = {24B3D41A-7D10-4C8A-9C3D-FA4CE0E07F8E}
+		{70909173-0F6D-4914-A112-57EE5176AEB6} = {C8CC5CEA-F0A3-4C63-A5AF-6C4AB8B6670B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9CC9FEAA-912A-4B1E-8000-FB0271A1D00A}
+	EndGlobalSection
+EndGlobal

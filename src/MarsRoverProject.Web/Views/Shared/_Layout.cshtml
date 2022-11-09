@@ -1,0 +1,47 @@
+﻿@{ 
+    var appName = "Mars Rover Project";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>@appName</title>
+
+    @* Styles *@
+    @Styles.Render("~/Content/css")
+
+    @* Head Scripts *@
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="more options">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink(@appName, "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Solution", "Solution", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - @appName</p>
+        </footer>
+    </div>
+
+    @* Footer Scripts *@
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/js")
+
+    @* Page specific Scripts *@
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
